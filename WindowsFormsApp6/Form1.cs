@@ -42,5 +42,32 @@ namespace WindowsFormsApp6
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Fraction f = Fraction.Parse(textBox3.Text);
+            listBox1.Items.Add(f);
+        }
+
+        private void btnPulisci_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+        }
+
+        private void btnSomma_Click(object sender, EventArgs e)
+        {
+            Fraction somma = new Fraction(0, 2);
+
+            foreach(Fraction fs in listBox1.Items)
+            {
+                somma =  fs.Somma(somma);
+            }
+            lblRisul.Text = somma.ToString();
+        }
     }
 }

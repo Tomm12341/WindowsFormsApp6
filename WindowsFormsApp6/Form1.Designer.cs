@@ -97,6 +97,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Aggiungi";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnPulisci
             // 
@@ -107,6 +108,7 @@
             this.btnPulisci.TabIndex = 7;
             this.btnPulisci.Text = "Pulisci";
             this.btnPulisci.UseVisualStyleBackColor = true;
+            this.btnPulisci.Click += new System.EventHandler(this.btnPulisci_Click);
             // 
             // btnSomma
             // 
@@ -116,6 +118,7 @@
             this.btnSomma.TabIndex = 8;
             this.btnSomma.Text = "Somma";
             this.btnSomma.UseVisualStyleBackColor = true;
+            this.btnSomma.Click += new System.EventHandler(this.btnSomma_Click);
             // 
             // lblRisul
             // 
@@ -143,6 +146,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
